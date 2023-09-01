@@ -367,3 +367,16 @@ alertmanager:
     subPath: ""
     # -- Size of the volume. Better to set the same as resource limit memory property.
     size: 50Mi
+
+# -- License key configuration for VictoriaMetrics enterprise. See https://docs.victoriametrics.com/enterprise.html
+# Required starting from v1.X.Y
+license:
+  # -- License key
+  key: ""
+
+  # -- Use existing secret with license key
+  secret:
+    # -- Existing secret name
+    name: ""
+    # -- Key in secret with license key
+    key: ""
